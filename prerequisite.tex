@@ -5,18 +5,33 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\author{Daniel Thomas}
-\title{Security I -- Mathematical prerequisites}
+
+% Define the exercise command for efficiently creating an question with a solution.
+\newcounter{questioncounter}
+\newcounter{answercounter}
+\newenvironment{question}{
+\refstepcounter{questioncounter}\textbf{Question \thequestioncounter}
+\newline}{\vspace{1em}\newline}
+\newenvironment{answer}{
+\refstepcounter{answercounter}\textbf{Answer \theanswercounter}
+\newline}{\vspace{1em}\newline}
 
 \newif\ifshowanswers
 \showanswersfalse
 
 \newcommand{\exercise}[2]{%
 \ifshowanswers%
+\begin{answer}
 #2
+\end{answer}
 \else%
+\begin{question}
 #1
+\end{question}
 \fi}
+
+\author{Daniel Thomas}
+\title{Security I -- Mathematical prerequisites}
 
 \begin{document}
 \maketitle
