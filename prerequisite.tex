@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Daniel Thomas}
+\title{Security I -- Mathematical prerequisites}
+
+\newif\ifshowanswers
+\showanswersfalse
+
+\newcommand{\exercise}[2]{%
+\ifshowanswers%
+#2
+\else%
+#1
+\fi}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The Security I course relies on some mathematical background which students may not be familiar with.
+This document seeks to cover that material and provide exercises which ensure that the material is well understood so that students can be confident that they will understand Security I.
+I will provide some pointers to material which explains the concepts and a collection of exercises with solutions which should solidify understanding of the concepts.
+\end{abstract}
+
+\section{Exercises}
+\showanswersfalse
+\input{exercises}
+
+
+\section{Solutions}
+\showanswerstrue
+\input{exercises}
+
+\end{document}
