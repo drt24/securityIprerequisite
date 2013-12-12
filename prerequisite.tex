@@ -6,6 +6,14 @@
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
+\RequirePackage[date=terse,isbn=true,doi=true,url=true,maxbibnames=9,backref=true]{biblatex}
+\addbibresource{prerequisite}
+\renewcommand{\bibfont}{\small}
+
+\AtEveryBibitem{% Clean up the bibtex rather than editing it
+ \clearname{editor} % remove editors
+}
+
 % Define the exercise command for efficiently creating an question with a solution.
 \newcounter{questioncounter}
 \newcounter{answercounter}
@@ -30,6 +38,12 @@
 \end{question}
 \fi}
 
+% Security 1 slide number references
+\newcommand{\slidesinitialmath}{14--20}
+\newcommand{\slidesprobability}{25--26}
+\newcommand{\slidesbirthday}{66}
+\newcommand{\slidesall}{\slidesinitialmath, \slidesprobability\ and \slidesbirthday}
+
 \author{Daniel Thomas}
 \title{Security I -- Mathematical prerequisites}
 
@@ -51,20 +65,13 @@ Clearly it is to your benefit to do the questions before looking at the answers.
 {\bf Aim:} Students should be comfortable with working with these concepts in general and applying them in practise, both for use in cryptography and in other parts of Computer Science.
 
 \section*{Material}
-The material to be covered is:
-\begin{itemize}
- \item Notation
- \item Groups
- \item Rings
- \item Fields
- \item $\mathrm{GF}(2^n)$
- \item Functions
- \item Modular arithmetic
- \item XOR
- \item probability
- \item birthday problem
- \item permutations and random mappings
-\end{itemize}
+The material to be covered is: notation, groups, rings, fields $\mathrm{GF}(2^n)$, functions, modular arithmetic, XOR, probability, birthday problem, permutations and random mappings.
+
+Other people (including the course lecturer) have written texts which explain this material better than I can.
+The Security I slides~\cite{SecurityISlides} cover the material on slides \slidesall.
+If you want a longer exposition Katz and Lindell's `Introduction to Modern Cryptography'~\cite{Katz2008} is highly recommended by the lecturer and the material is covered in Appendices A and B.
+Denning's `Cryptography and data security'~\cite{Denning1982} has a longer exposition and more exercises in Section 1.6.
+Knuth's `The Art of Computer Programming' covers some of the material in `Volume 1 -- Fundamental Algorithms'~\cite{KnuthTAOCP1} in Sections 1.2.4 and 1.2.5; and in `Volume 2 -- Seminumerical Algorithms'~\cite{KnuthTAOCP2} in Sections 4.6.\{0,1,2\} again with exercises.
 
 \section*{Exercises}
 \showanswersfalse
@@ -75,5 +82,7 @@ The material to be covered is:
 \section*{Solutions}
 \showanswerstrue
 \input{exercises}
+
+\printbibliography
 
 \end{document}
