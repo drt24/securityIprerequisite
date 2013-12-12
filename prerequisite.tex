@@ -18,11 +18,11 @@
 \newcounter{questioncounter}
 \newcounter{answercounter}
 \newenvironment{question}{
-\refstepcounter{questioncounter}\textbf{Question \thequestioncounter}
-\newline}{\vspace{1em}\newline}
+\refstepcounter{questioncounter}\textbf{Q\thequestioncounter: }
+}{\vspace{1em}\newline}
 \newenvironment{answer}{
-\refstepcounter{answercounter}\textbf{Answer \theanswercounter}
-\newline}{\vspace{1em}\newline}
+\refstepcounter{answercounter}\textbf{A\theanswercounter: }
+}{\vspace{1em}\newline}
 
 \newif\ifshowanswers
 \showanswersfalse
