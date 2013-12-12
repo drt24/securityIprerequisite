@@ -3,8 +3,10 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{ dsfont }
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{hyperref}
 
 \RequirePackage[date=terse,isbn=true,doi=true,url=true,maxbibnames=9,backref=true]{biblatex}
 \addbibresource{prerequisite}
@@ -38,11 +40,14 @@
 \end{question}
 \fi}
 
+\newcommand{\nmod}[1]{\;(\!\!\!\mod #1)}
+\newcommand{\Z}{\mathds{Z}}
+
 % Security 1 slide number references
 \newcommand{\slidesinitialmath}{14--20}
-\newcommand{\slidesgroups}{15}
-\newcommand{\slidesrings}{16}
-\newcommand{\slidesfields}{16}
+\newcommand{\slidesgroups}{\cite[15]{SecurityISlides}}
+\newcommand{\slidesrings}{\cite[16]{SecurityISlides}}
+\newcommand{\slidesfields}{\cite[16]{SecurityISlides}}
 \newcommand{\slidesprobability}{25--26}
 \newcommand{\slidesbirthday}{66}
 \newcommand{\slidesall}{\slidesinitialmath, \slidesprobability\ and \slidesbirthday}
