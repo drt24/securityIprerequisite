@@ -28,6 +28,13 @@ $n$ is an integer, $p$ is prime.\\
 \exercise{What is the birthday problem?}{\slidesbirthdayproblem}
 
 \subsection*{Usage}
-\exercise{question2}{answer2}
+\exercise{Why is exponentiation $a^b \nmod{n}$ faster to compute than $a^b$ when $a^b > n$?}{You can reduce mod $n$ as you go along~\cite[p39, Figure 1.20]{Denning1982}}
+\exercise{$3^5 \mod 7 =$ ?}{5}
+\exercise{$3^{-1} \mod 10 =$ ?}{7}
+\exercise{What are all the elements in $\Z^*_{19}$ of multiplicative order 18 (i.e.\ when used as a generator they generate 18 elements)?\cite[Ex 2.26]{CryptoI}}{2, 3}
+\exercise{As above but for $\Z^*_{17}$ of multiplicative order 16}{TODO}
+
 \subsection*{Understanding}
-\exercise{question3}{answer3}
+\exercise{Birthday problem: prove that as $n \rightarrow \infty$ the expected number of balls needed for a collision is $\sqrtc{n\pi/2}$}{\cite[\S A.4, p496]{Katz2008}}
+\exercise{Develop an algorithm to compute $a^b \nmod{N}$\cite[p515, B.3]{Katz2008}}{\cite[p507, Algorithm B.13]{Katz2008}}
+\exercise{Show how to determine that an $n$-bit string is in $\Z_N^*$\cite[p515, B.4]{Katz2008}}{TODO}

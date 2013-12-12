@@ -42,6 +42,13 @@
 
 \newcommand{\nmod}[1]{\;(\!\!\!\mod #1)}
 \newcommand{\Z}{\mathds{Z}}
+% New square root \sqrtc:
+\def\sqrtc{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\sqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+{\box0\lower0.4pt\box2}}
 
 % Security 1 slide number references
 \newcommand{\slidesinitialmath}{14--20}
