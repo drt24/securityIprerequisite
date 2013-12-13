@@ -28,11 +28,35 @@ $n$ is an integer, $p$ is prime.\\
 \exercise{What is the birthday problem?}{\slidesbirthdayproblem}
 
 \subsection*{Usage}
+\exercise{Show that $(\Z,+)$ is an abelian group}{closure and associativity by definition, 0 is neutral, $-x$ is inverse.}
+\exercise{Show that $(\Z,\cdot)$ is monoid}{closure and associativity by definition, 1 is neutral but there is no way of making an element smaller as all elements are 1 or greater (or perhaps 0 which only maps us to 0)}
 \exercise{Why is exponentiation $a^b \nmod{n}$ faster to compute than $a^b$ when $a^b > n$?}{You can reduce mod $n$ as you go along~\cite[p39, Figure 1.20]{Denning1982}}
+\exercise{$53 \times 62 \mod 11 =$?}{8}
+\exercise{$48 \times 73 \mod 7 =$?}{4}
+\exercise{$33 \times 19 \mod 13 =$?}{3}
 \exercise{$3^5 \mod 7 =$ ?}{5}
+\exercise{$4^4 \mod 7 =$ ?}{4}
+\exercise{$2^6 \mod 11 =$ ?}{9}
 \exercise{$3^{-1} \mod 10 =$ ?}{7}
-\exercise{What are all the elements in $\Z^*_{19}$ of multiplicative order 18 (i.e.\ when used as a generator they generate 18 elements)?\cite[Ex 2.26]{CryptoI}}{2, 3}
-\exercise{As above but for $\Z^*_{17}$ of multiplicative order 16}{TODO}
+\exercise{$5^{-1} \mod 13 =$ ?}{8}
+\exercise{$7^{-1} \mod 19 =$ ?}{11}
+\exercise{What are all the elements in $\Z^*_{19}$ of multiplicative order 18 (i.e.\ when used as a generator they generate 18 elements)?\cite[Ex 2.26]{CryptoI}}{2, 3, 10, 13, 14, 15}
+\exercise{As above but for $\Z^*_{13}$ of multiplicative order 12}{2, 6, 7, 11}
+\exercise{As above but for $\Z^*_{11}$ of multiplicative order 10}{2, 6, 7, 8}
+\exercise{A bag contains one ball which, equiprobably, may be black or white.
+A white ball is added to the bag which is then shaken.
+One ball is retrieved at random and found to be white.
+What is the probability that the other ball is white?~\cite[Ex~II.1, p2.12]{King2007}}{TODO}
+\exercise{One person in 1000 is know not suffer from Nerd's Syndrome (a pathological inability to resist playing computer games).
+A standard test is such that 99\% of those who suffer from Nerd's Syndrome show a positive result.
+The same test also (falsely) shows positive with 2\% of \emph{non}-suffers.
+
+A person selected at random is tested and found positive.
+What is the probability that this person actually suffers from Nerd's Syndrome?~\cite[Ex~II.3, p2.13]{King2007}}{TODO}
+\exercise{Four people go to an oyster card swapping party (they want to be difficult to track).
+The oyster cards are thrown into a hat, shuffled, and then distributed randomly one to each participant.
+What is the probability that a participant goes home with his original card?~\cite[Ex~II.8, p2.14]{King2007}}{TODO}
+\exercise{Birthday problem: with 1024 bins how many balls are needed for the probability of collision to exceed 0.5? (You might want a calculator/computer for this one)}{38}
 
 \subsection*{Understanding}
 \exercise{Birthday problem: prove that as $n \rightarrow \infty$ the expected number of balls needed for a collision is $\sqrtc{n\pi/2}$}{\cite[\S A.4, p496]{Katz2008}}
