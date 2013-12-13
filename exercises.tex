@@ -43,6 +43,14 @@ $n$ is an integer, $p$ is prime.\\
 \exercise{What are all the elements in $\Z^*_{19}$ of multiplicative order 18 (i.e.\ when used as a generator they generate 18 elements)?\cite[Ex 2.26]{CryptoI}}{2, 3, 10, 13, 14, 15}
 \exercise{As above but for $\Z^*_{13}$ of multiplicative order 12}{2, 6, 7, 11}
 \exercise{As above but for $\Z^*_{11}$ of multiplicative order 10}{2, 6, 7, 8}
+\exercise{In the Galois field GF($2^8$) modulo $x^8 + x^4 + x + 1$ calculate:
+\begin{enumerate}
+ \item the difference 1100 1010 minus 1001 0011;
+ \item the product 0100 1011 times 0000 1001.
+\end{enumerate}[2013 P4 Q8 a]}{\begin{enumerate}
+ \item in GF($2^n$) subtraction is the same as bitwise XOR: 0101 1001.
+ \item Binary multiplication without carry, then subtract (XOR) multiples (shifted versions) of $x^8 + x^4 + x + 1$ to elimiate any leading bits that make the result larger than 1111 1111: 0011 0101
+\end{enumerate}[from the solution notes]}
 \exercise{A bag contains one ball which, equiprobably, may be black or white.
 A white ball is added to the bag which is then shaken.
 One ball is retrieved at random and found to be white.
@@ -62,3 +70,4 @@ What is the probability that a participant goes home with his original card?~\ci
 \exercise{Birthday problem: prove that as $n \rightarrow \infty$ the expected number of balls needed for a collision is $\sqrtc{n\pi/2}$}{\cite[\S A.4, p496]{Katz2008}}
 \exercise{Develop an algorithm to compute $a^b \nmod{N}$\cite[p515, B.3]{Katz2008}}{\cite[p507, Algorithm B.13]{Katz2008}}
 \exercise{Show how to determine that an $n$-bit string is in $\Z_N^*$\cite[p515, B.4]{Katz2008}}{TODO}
+\exercise{Prove Bayes' Therom.}{\cite[Thrm~A.8, p495]{Katz2008}}
