@@ -4,7 +4,7 @@ $n$ is an integer, $p$ is prime.\\
 \exercise{$A$ is finite, what is $|A^n|$ in terms of $|A|$?}{$|A|^n$}
 \exercise{What is $A^*$?}{$\bigcup^\infty_{i=0}A^i$}
 \exercise{$|\mathrm{Perm}(A)| =$?}{$|A|!$}
-\exercise{How many functions are there of the form $f : A \rightarrow B$}{$|B^A| = |B|^{|A|}$}
+\exercise{How many functions are there of the form $f : A \rightarrow B$}{$|B^A| = |B|^{|A|}$?}
 \exercise{What is a group?}{\slidesgroups}
 \exercise{What is an abelian group?}{\slidesgroups}
 \exercise{What kind of group is $(G,\bullet)$ if it has no inverse element?}{monoid}
@@ -14,7 +14,7 @@ $n$ is an integer, $p$ is prime.\\
 \exercise{What are the requirements for a field?}{\slidesfields}
 \exercise{Give an example of a ring and of a field.}{\slidesrings}
 \exercise{What does $n|(a-b)$ mean?}{$n$ divides $(a-b)$}
-\exercise{Under what condition does $a^{p-1}\equiv 1 \nmod{p}$?}{$\gcd(a,p)=1$}
+\exercise{Under what condition does $a^{p-1}\equiv 1$ $\nmod{p}$?}{$\gcd(a,p)=1$}
 \exercise{$a \in \Z_n$, under what condition does $a^{-1}$ exist?}{$\gcd(a,n)=1$}
 \exercise{What is $\Z_n^*$?}{The set of all elements of $\Z_n$ that have an inverse.}
 \exercise{How do you generate $\Z_p^*$ with $g$?}{$\Z_p^* = \{g^i\!\!\mod p|0\le i\le p -2\}$}
@@ -28,19 +28,19 @@ $n$ is an integer, $p$ is prime.\\
 \exercise{What is the birthday problem?}{\slidesbirthdayproblem}
 
 \subsection*{Usage}
-\exercise{Show that $(\Z,+)$ is an abelian group}{closure and associativity by definition, 0 is neutral, $-x$ is inverse.}
-\exercise{Show that $(\Z,\cdot)$ is monoid}{closure and associativity by definition, 1 is neutral but there is no way of making an element smaller as all elements are 1 or greater (or perhaps 0 which only maps us to 0)}
-\exercise{Why is exponentiation $a^b \nmod{n}$ faster to compute than $a^b$ when $a^b > n$?}{You can reduce mod $n$ as you go along~\cite[p39, Figure 1.20]{Denning1982}}
-\exercise{$53 \times 62 \mod 11 =$?}{8}
-\exercise{$48 \times 73 \mod 7 =$?}{4}
-\exercise{$33 \times 19 \mod 13 =$?}{3}
+\exercise{Show that $(\Z,+)$ is an abelian group}{Closure and associativity by definition, 0 is neutral, $-x$ is inverse.}
+\exercise{Show that $(\Z,\cdot)$ is monoid}{Closure and associativity by definition, 1 is neutral but there is no way of making an element smaller as all elements are 1 or greater (or perhaps 0 which only maps us to 0).}
+\exercise{Why is exponentiation $a^b \nmod{n}$ faster to compute than $a^b$ when $a^b > n$?}{You can reduce mod $n$ as you go along.~\cite[p39, Figure 1.20]{Denning1982}}
+\exercise{$53 \times 62 \mod 11 =$ ?}{8}
+\exercise{$48 \times 73 \mod 7 =$ ?}{4}
+\exercise{$33 \times 19 \mod 13 =$ ?}{3}
 \exercise{$3^5 \mod 7 =$ ?}{5}
 \exercise{$4^4 \mod 7 =$ ?}{4}
 \exercise{$2^6 \mod 11 =$ ?}{9}
 \exercise{$3^{-1} \mod 10 =$ ?}{7}
 \exercise{$5^{-1} \mod 13 =$ ?}{8}
 \exercise{$7^{-1} \mod 19 =$ ?}{11}
-\exercise{What are all the elements in $\Z^*_{19}$ of multiplicative order 18 (i.e.\ when used as a generator they generate 18 elements)?\cite[Ex 2.26]{CryptoI}}{2, 3, 10, 13, 14, 15}
+\exercise{What are all the elements in $\Z^*_{19}$ of multiplicative order 18 (i.e.\ when used as a generator they generate 18 elements)?~\cite[Ex 2.26]{CryptoI}}{2, 3, 10, 13, 14, 15}
 \exercise{As above but for $\Z^*_{13}$ of multiplicative order 12}{2, 6, 7, 11}
 \exercise{As above but for $\Z^*_{11}$ of multiplicative order 10}{2, 6, 7, 8}
 \exercise{In the Galois field GF($2^8$) modulo $x^8 + x^4 + x + 1$ calculate:
@@ -52,25 +52,25 @@ $n$ is an integer, $p$ is prime.\\
  \item Binary multiplication without carry, then subtract (XOR) multiples (shifted versions) of $x^8 + x^4 + x + 1$ to elimiate any leading bits that make the result larger than 1111 1111: 0011 0101
 \end{enumerate}[from the solution notes]}
 \exercise{Let $a = 100 (x^2)$ in GF($2^3$) with modulus $p(x) = 1011 (x^3 + x + 1)$. Divide 1 0000 0000 0000 by 1011 to show that $a^{-1} = 100^6 \mod 1011 = 111$.~\cite[Ex~1.19, p56]{Denning1982}}{Show that question.}
-\exercise{Let $a = 101$. If $a$ is squred in GF($2^3$) with irreducible polynomial $p(x) = x^3 + x + 1$ (1011 in binary), the product $d = a \times a =$ ?~\cite[p51]{Denning1982}}{111}
+\exercise{Let $a = 101$. If $a$ is squared in GF($2^3$) with irreducible polynomial $p(x) = x^3 + x + 1$ (1011 in binary), the product $d = a \times a =$ ?~\cite[p51]{Denning1982}}{111}
 \exercise{Let $a = 111$ and $b = 100$. What is the product $d = a \times b$ computed in GF($2^3$) with irreducible polynomial $p(x) = 1011$ $(x^3 + x + 1)$?~\cite[p51]{Denning1982}}{1. So $a$ and $b$ are inverses mod 1011.}
 \exercise{A bag contains one ball which, equiprobably, may be black or white.
 A white ball is added to the bag which is then shaken.
 One ball is retrieved at random and found to be white.
-What is the probability that the other ball is white?~\cite[Ex~II.1, p2.12]{King2007}}{TODO}
-\exercise{One person in 1000 is know not suffer from Nerd's Syndrome (a pathological inability to resist playing computer games).
+What is the probability that the other ball is white?~\cite[Ex~II.1, p2.12]{King2007}}{$\frac{2}{3}$}
+\exercise{One person in 1000 is know to suffer from Nerd's Syndrome (a pathological inability to resist playing computer games).
 A standard test is such that 99\% of those who suffer from Nerd's Syndrome show a positive result.
 The same test also (falsely) shows positive with 2\% of \emph{non}-suffers.
 
 A person selected at random is tested and found positive.
-What is the probability that this person actually suffers from Nerd's Syndrome?~\cite[Ex~II.3, p2.13]{King2007}}{TODO}
+What is the probability that this person actually suffers from Nerd's Syndrome?~\cite[Ex~II.3, p2.13]{King2007}}{$\frac{11}{233}$}
 \exercise{Four people go to an oyster card swapping party (they want to be difficult to track).
 The oyster cards are thrown into a hat, shuffled, and then distributed randomly one to each participant.
-What is the probability that a participant goes home with his original card?~\cite[Ex~II.8, p2.14]{King2007}}{TODO}
+What is the probability that \emph{no} participant goes home with his original card?~\cite[Ex~II.8, p2.14]{King2007}}{$\frac{3}{8}$}
 \exercise{Birthday problem: with 1024 bins how many balls are needed for the probability of collision to exceed 0.5? (You might want a calculator/computer for this one)}{38}
 
 \subsection*{Understanding}
 \exercise{Birthday problem: prove that as $n \rightarrow \infty$ the expected number of balls needed for a collision is $\sqrtc{n\pi/2}$}{\cite[\S A.4, p496]{Katz2008}}
-\exercise{Develop an algorithm to compute $a^b \nmod{N}$\cite[p515, B.3]{Katz2008}}{\cite[p507, Algorithm B.13]{Katz2008}}
-\exercise{Show how to determine that an $n$-bit string is in $\Z_N^*$\cite[p515, B.4]{Katz2008}}{TODO}
+\exercise{Develop an algorithm to compute $a^b$ $\nmod{N}$.~\cite[p515, B.3]{Katz2008}}{\cite[p507, Algorithm B.13]{Katz2008}}
+\exercise{Show how to determine that an $n$-bit string is in $\Z_N^*$\cite[p515, B.4]{Katz2008}}{Solutions welcome.}
 \exercise{Prove Bayes' Therom.}{\cite[Thrm~A.8, p495]{Katz2008}}
