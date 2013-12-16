@@ -51,6 +51,9 @@ $n$ is an integer, $p$ is prime.\\
  \item in GF($2^n$) subtraction is the same as bitwise XOR: 0101 1001.
  \item Binary multiplication without carry, then subtract (XOR) multiples (shifted versions) of $x^8 + x^4 + x + 1$ to elimiate any leading bits that make the result larger than 1111 1111: 0011 0101
 \end{enumerate}[from the solution notes]}
+\exercise{Let $a = 100 (x^2)$ in GF($2^3$) with modulus $p(x) = 1011 (x^3 + x + 1)$. Divide 1 0000 0000 0000 by 1011 to show that $a^{-1} = 100^6 \mod 1011 = 111$.~\cite[Ex~1.19, p56]{Denning1982}}{Show that question.}
+\exercise{Let $a = 101$. If $a$ is squred in GF($2^3$) with irreducible polynomial $p(x) = x^3 + x + 1$ (1011 in binary), the product $d = a \times a =$ ?~\cite[p51]{Denning1982}}{111}
+\exercise{Let $a = 111$ and $b = 100$. What is the product $d = a \times b$ computed in GF($2^3$) with irreducible polynomial $p(x) = 1011$ $(x^3 + x + 1)$?~\cite[p51]{Denning1982}}{1. So $a$ and $b$ are inverses mod 1011.}
 \exercise{A bag contains one ball which, equiprobably, may be black or white.
 A white ball is added to the bag which is then shaken.
 One ball is retrieved at random and found to be white.
